@@ -20,7 +20,7 @@ From Alphabet Soup’s business team, I have received a CSV containing more than
 
 ## Process
 
-Data Preprocessing
+### Data Preprocessing
 
 - I dropped the EIN and NAME—Identification columns as they have no relevance to what we're evaluating
 - I reduced the number of values in APPLICATION_TYPE and CLASSIFICATION by categorizing smaller segments into an "other" label.
@@ -32,14 +32,19 @@ Data Preprocessing
 
 ## Compiling, Training & Evaluating
 
-I created the first model based on the starter code's outputs. (Loss: 0.5546185970306396, Accuracy: 0.7261807322502136)
-I'd like to achieve a higher accuracy of 75%, so I created 3 variations in hopes of increasing the accuracy and reducing the loss.
-Optimization Attempt 1 (Loss: 0.5743629932403564, Accuracy: 0.728396475315094)
-Increase number of epochs from 100 to 200
-Optimization Attempt 2 (Loss: 0.566865861415863, Accuracy: 0.728863000869751)
-Increased nodes in layer one to 3 times the number of columns in dataset.
-Increased nodes in layer two to 1/2 the number of nodes as layer one
-Optimization Attempt 3 (Loss: 0.580244243144989, Accuracy: 0.7292128205299377)
-Changed the number of nodes in layer one to 120
-Changed the number of nodes in layer two to 90.
-Added a third layer with 30 nodes.
+I created the first model based on the starter code's outputs. (Loss: 0.5574541091918945, Accuracy: 0.7245481014251709)
+I wanted to see if I could  achieve a higher accuracy of 75%, so I created 3 variations in hopes of increasing the accuracy and reducing the loss.
+
+Optimization Attempt 1 (Loss: 0.5649140477180481, Accuracy: 0.7250145673751831)
+- Increase number of epochs from 100 to 200
+- Added a third layer with 30 nodes
+
+Optimization Attempt 2 (Loss:0.5648283362388611, Accuracy: 0.7264139652252197)
+- Increased nodes in layer one to 120
+- Increased nodes in layer two to 1/2 the number of nodes as layer one
+- Kept the third layer the same
+
+Optimization Attempt 3 (Loss:0.5620385408401489, Accuracy: 0.7253644466400146)
+- Changed the number of nodes in layer one to 100
+- Changed the number of nodes in layer two to 70
+- Changed the number of notes in layter three to 20
