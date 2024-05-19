@@ -30,9 +30,9 @@ Data Preprocessing
 - I split the data into training ad testing datasets.
 - I scaled the training and testing features using StandardScaler before fitting it to the model.
 
-Compiling, Training & Evaluating
+## Compiling, Training & Evaluating
 
-I created the first model based on the starter code's outputs. (Loss: 0.55914705991745, Accuracy: 0.7302623987197876)
+I created the first model based on the starter code's outputs. (Loss: 0.5546185970306396, Accuracy: 0.7261807322502136)
 I'd like to achieve a higher accuracy of 75%, so I created 3 variations in hopes of increasing the accuracy and reducing the loss.
 Optimization Attempt 1 (Loss: 0.5743629932403564, Accuracy: 0.728396475315094)
 Increase number of epochs from 100 to 200
